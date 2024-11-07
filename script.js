@@ -100,11 +100,11 @@ form.addEventListener("submit", function (event) {
         } else if (tax_in > 24_000 && tax_in <= 32333) {
             tax_income1 = ((24_000 * 0.1) + ((tax_in - 24_000) * 0.25)) - relief;
         } else if (tax_in > 32333 && tax_in <= 500_000) {
-            tax_income1 = ((24_000 * 0.1) + (8333 * 0.25) + ((tax_in - 32333) * 0.30)) - relief;
+            tax_income1 = ((24_000 * 0.1) + (8233 * 0.25) + ((tax_in - 32333) * 0.30)) - relief;
         } else if (tax_in > 500_000 && tax_in <= 800_000) {
-            tax_income1 = ((24_000 * 0.1) + (8333 * 0.25) + (467_667 * 0.30) + ((tax_in - 500_000) * 0.325)) - relief;
+            tax_income1 = ((24_000 * 0.1) + (8233 * 0.25) + (467_667 * 0.30) + ((tax_in - 500_000) * 0.325)) - relief;
         } else {
-            tax_income1 = ((24_000 * 0.1) + (8333 * 0.25) + (467_667 * 0.30) + (300_000 * 0.325) + ((tax_in - 800_000) * 0.35)) - relief;
+            tax_income1 = ((24_000 * 0.1) + (8233 * 0.25) + (467_667 * 0.30) + (300_000 * 0.325) + ((tax_in - 800_000) * 0.35)) - relief;
         }
         return tax_income1;
     }
